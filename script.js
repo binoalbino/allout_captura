@@ -1,5 +1,6 @@
 // TODO: substitua pela URL real do seu Webhook (Zapier, Make, n8n, endpoint próprio, etc.)
 const WEBHOOK_URL = "https://n8n.lamarketing.com.br/webhook/2cc3fda6-c765-4f01-b3d2-24b2953db76f";
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/EbetZHu4e825uIc7Ub9qXG";
 
 const form = document.getElementById("vip-form");
 const statusEl = document.getElementById("form-status");
@@ -49,7 +50,10 @@ form.addEventListener("submit", async (event) => {
     if (!response.ok) throw new Error("Falha no envio (" + response.status + ")");
 
     form.reset();
-    setStatus("Cadastro enviado! Fique de olho no seu e-mail e WhatsApp.", "success");
+    setStatus("Cadastro enviado! Redirecionando para o grupo do WhatsApp...", "success");
+    setTimeout(() => {
+      window.location.href = WHATSAPP_GROUP_URL;
+    }, 1200);
   } catch (err) {
     setStatus("Não foi possível enviar agora. Tente novamente em instantes.", "error");
   } finally {
