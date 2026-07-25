@@ -7,28 +7,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
 <header class="hero" id="top">
-  <div class="hero__bg" aria-hidden="true"></div>
+  <img src="assets/bg-mobile2.png" alt="" class="hero__bg hero__bg--mobile" aria-hidden="true">
+  <img src="assets/bg-desk3.png" alt="" class="hero__bg hero__bg--desktop" aria-hidden="true">
   <div class="hero__overlay" aria-hidden="true"></div>
 
   <div class="container hero__content">
     <img src="assets/logo.svg" alt="ALL OUT" class="logo">
 
-    <h1 class="hero__title">entre em nosso<br>grupo VIP</h1>
+    <h1 class="hero__title"><span class="hero__title-desktop">Entre no <span class="hero__title-highlight">Grupo VIP</span><br>da ALL OUT RUN</span><span class="hero__title-mobile">Entre no <span class="hero__title-highlight">Grupo VIP</span><br>da ALLOUT</span></h1>
 
     <p class="hero__lead">
       Receba ofertas exclusivas, acesso antecipado a lançamentos e avisos de estoque antes de todo mundo.
     </p>
 
-    <ul class="hero__features">
-      <li><span class="dot"></span>Ofertas reais, sem ruído</li>
-      <li><span class="dot"></span>Drops e lançamentos em primeira mão</li>
-      <li><span class="dot"></span>Conteúdos e condições só para membros</li>
-    </ul>
+    <div class="hero__features">
+      <img src="assets/mobile_frame9.png" alt="Ofertas reais, sem ruído — Drops e lançamentos em primeira mão — Conteúdos e condições só para membros" class="hero__features-img hero__features-img--mobile">
+      <img src="assets/desktop_frame9.png" alt="Ofertas reais, sem ruído — Drops e lançamentos em primeira mão — Conteúdos e condições só para membros" class="hero__features-img hero__features-img--desktop">
+    </div>
 
     <form class="vip-form" id="vip-form" novalidate>
       <div class="field">
@@ -42,7 +42,7 @@
       </div>
 
       <button type="submit" class="btn-cta" id="submit-btn">
-        <span class="btn-cta__label">Entrar no Grupo VIP</span>
+        <span class="btn-cta__label">ENTRAR NO GRUPO VIP</span>
       </button>
 
       <p class="form__note">Seus dados estão seguros. O acesso chega no seu e-mail e WhatsApp.</p>
@@ -62,33 +62,15 @@
 
 <main class="benefits">
   <div class="container">
-    <h2 class="benefits__title">Não é só um grupo. É fazer parte da corrida.</h2>
-    <p class="benefits__lead">
-      Criamos o Grupo VIP da ALL OUT para quem vive a corrida — do treino leve ao dia de prova.
-      Nada de mensagens aleatórias ou promoções vazias.<br>
-      Aqui você recebe apenas o que importa:
-    </p>
+    <img
+      src="assets/mobile_frame1707478865.png"
+      alt="Não é só um grupo. É fazer parte da corrida. Criamos o Grupo VIP da ALL OUT para quem vive a corrida — do treino leve ao dia de prova. Nada de mensagens aleatórias ou promoções vazias. Aqui você recebe apenas o que importa: 01 condições especiais, 02 lançamentos, 03 avisos de estoque, 04 e oportunidades que não vão para o site."
+      class="benefits__image benefits__image--mobile">
 
-    <div class="benefits__grid">
-      <div class="benefit-card">
-        <span class="benefit-card__num">01</span>
-        <p>condições especiais,</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-card__num">02</span>
-        <p>lançamentos,</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-card__num">03</span>
-        <p>avisos de estoque,</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-card__num">04</span>
-        <p>e oportunidades que não vão para o site.</p>
-      </div>
-    </div>
-
-    <p class="benefits__closing">É o nosso canal direto com quem corre junto com a marca.</p>
+    <img
+      src="assets/desktop_frame1707478858.png"
+      alt="Não é só um grupo. É fazer parte da corrida. Criamos o Grupo VIP da ALL OUT para quem vive a corrida — do treino leve ao dia de prova. Nada de mensagens aleatórias ou promoções vazias. Aqui você recebe apenas o que importa: 01 condições especiais, 02 lançamentos, 03 avisos de estoque, 04 e oportunidades que não vão para o site."
+      class="benefits__image benefits__image--desktop">
 
     <button type="button" class="btn-cta btn-cta--secondary" data-scroll-to="name">
       <span class="btn-cta__label">Entrar no Grupo VIP</span>

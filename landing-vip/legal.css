@@ -43,6 +43,13 @@
 .legal-content p { margin-bottom: 24px; }
 .legal-content p:last-child { margin-bottom: 0; }
 .legal-content a { text-decoration: underline; }
+.legal-content .btn-cta {
+  /* .legal-content a (classe + tag) tem especificidade maior que .btn-cta
+     sozinho, por isso o sublinhado vazava pro botão mesmo com
+     text-decoration:none no style.css. Sobrescrevendo aqui, escopado
+     só a esta página. */
+  text-decoration: none;
+}
 
 .legal-table {
   display: flex;

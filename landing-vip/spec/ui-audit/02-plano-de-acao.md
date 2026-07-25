@@ -33,7 +33,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   ```
 - **Dependências:** Nenhuma
 - **Critério de aceite:** o arquivo `landing-vip/assets/fonts/obvia-condensed-medium.otf` existe e `style.css` contém a regra `@font-face` acima.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-13
 - **Origem:** DIV-13
@@ -44,7 +44,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `--font-heading: 'Obvia Condensed', 'Oswald', 'Arial Narrow', sans-serif;` (mantém fallback, mas passa a resolver para a fonte real porque `@font-face` da TASK-DIV-30 já registra o nome `'Obvia Condensed'`)
 - **Dependências:** TASK-DIV-30
 - **Critério de aceite:** com `@font-face` presente, qualquer elemento com `var(--font-heading)` renderiza com `Obvia Condensed` (verificável via DevTools → Computed → font-family carregada).
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-01-a
 - **Origem:** DIV-01
@@ -55,7 +55,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `<h1 class="hero__title"><span class="hero__title-desktop">Entre no Grupo VIP da ALL OUT RUN</span><span class="hero__title-mobile">Entre no Grupo VIP da ALLOUT</span></h1>`
 - **Dependências:** Nenhuma
 - **Critério de aceite:** o elemento `.hero__title` contém os dois `<span>` com os textos exatos acima.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-01-b
 - **Origem:** DIV-01
@@ -75,7 +75,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   ```
 - **Dependências:** TASK-DIV-01-a
 - **Critério de aceite:** abaixo de 1024px só "Entre no Grupo VIP da ALLOUT" fica visível; a partir de 1024px só "Entre no Grupo VIP da ALL OUT RUN" fica visível.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-11
 - **Origem:** DIV-11
@@ -86,7 +86,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `font-size: 75px; letter-spacing: -2.25px;` (e `line-height: 90px;` no lugar de herdar `line-height: 1.2` da regra base)
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.hero__title` a partir de 1024px possui `font-size: 75px;`, `letter-spacing: -2.25px;` e `line-height: 90px;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-27
 - **Origem:** DIV-27
@@ -97,7 +97,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** Arquivo `landing-vip/assets/benefits-bg.png` presente e referenciado pela regra criada na TASK-DIV-02/TASK-DIV-20 (`background-image: url("assets/benefits-bg.png")`).
 - **Dependências:** Nenhuma
 - **Critério de aceite:** o arquivo existe em `landing-vip/assets/benefits-bg.png`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-02
 - **Origem:** DIV-02
@@ -121,7 +121,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   (conteúdo interno do `<h2>`/`<p>` permanece o mesmo, apenas adiciona o wrapper `.benefits__intro-card`)
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.benefits__title` e `.benefits__lead` estão aninhados dentro de um elemento `.benefits__intro-card`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-20
 - **Origem:** DIV-20
@@ -142,7 +142,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   ```
 - **Dependências:** TASK-DIV-02
 - **Critério de aceite:** `.benefits__intro-card` existe em `style.css` com `background-color: #cad65f` e `border-radius: 11px`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-19
 - **Origem:** DIV-19
@@ -163,7 +163,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** adicionar a linha `color: #009dbb;` dentro da mesma regra.
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.benefit-card__num` possui `color: #009dbb;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-18
 - **Origem:** DIV-18
@@ -193,7 +193,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   ```
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.btn-cta` renderiza com o gradiente ciano `#45d4ef → #22b8d5 → #11abc8 → #009dbb`, não mais o gradiente lima.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído (também aplicado `.btn-cta__label` cor branca `#fdfdfc` e `font-size: 18px` — necessário para legibilidade sobre o novo gradiente e confirmado pelo `get_design_context` dos nós 235:382/235:420, que já cobre TASK-DIV-14)
 
 ---
 
@@ -208,7 +208,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** Arquivo `landing-vip/assets/title-underline.svg` presente.
 - **Dependências:** Nenhuma
 - **Critério de aceite:** o arquivo existe em `landing-vip/assets/title-underline.svg`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-24
 - **Origem:** DIV-24
@@ -222,7 +222,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   ```
 - **Dependências:** TASK-DIV-28
 - **Critério de aceite:** `.hero__title-underline` está presente no DOM e referencia `assets/title-underline.svg`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído (dimensão ajustada para `298×9.56px` para preservar a proporção natural do SVG exportado — a caixa de layout do Figma era 298×3px, mas o traçado do rabisco vaza dessa caixa; ver G5 da skill de design-to-code)
 
 ### TASK-DIV-06
 - **Origem:** DIV-06
@@ -233,7 +233,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `gap: 35px;`
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.hero__content` possui `gap: 35px;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-07
 - **Origem:** DIV-07
@@ -244,7 +244,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** base `gap: 15px;` / desktop `gap: 15px;` (a variação de eixo não existe no Figma — valor único `15px` em ambos os breakpoints)
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.hero__features` tem `gap: 15px` tanto na regra base quanto dentro do media query de 1024px.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-14
 - **Origem:** DIV-14
@@ -255,7 +255,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `font-size: 18px;`
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.btn-cta__label` possui `font-size: 18px;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído (aplicado junto com TASK-DIV-18, mesmo bloco/regra)
 
 ### TASK-DIV-16
 - **Origem:** DIV-16
@@ -266,7 +266,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `font-size: 64px;`
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.benefit-card__num` (fora do media query de 1024px) possui `font-size: 64px;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-32
 - **Origem:** DIV-32
@@ -280,7 +280,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
   ```
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.dot` mede 40×40px a partir de 1024px de viewport e 30×30px abaixo disso.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ---
 
@@ -295,7 +295,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `ENTRAR NO GRUPO VIP`
 - **Dependências:** Nenhuma
 - **Critério de aceite:** o texto-fonte do botão principal do formulário está em caixa alta (resultado visual não muda, pois `text-transform: uppercase` já aplicava).
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-17
 - **Origem:** DIV-17
@@ -306,7 +306,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `font-size: 36px;`
 - **Dependências:** Nenhuma
 - **Critério de aceite:** `.benefits__title` (fora do media query de 1024px) possui `font-size: 36px;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído
 
 ### TASK-DIV-12
 - **Origem:** DIV-12
@@ -317,7 +317,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** `font-size: 42.12px; line-height: 1.2; letter-spacing: -1.2636px;`
 - **Dependências:** TASK-DIV-01-a, TASK-DIV-01-b
 - **Critério de aceite:** `.hero__title` base possui `font-size: 42.12px;` e `letter-spacing: -1.2636px;`.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído (aplicado junto com TASK-DIV-01-a/b, mesma regra base)
 
 ### TASK-DIV-10
 - **Origem:** DIV-10
@@ -328,7 +328,7 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** remover os `margin-bottom` individuais e aplicar `gap: 25px;` + `display: flex; flex-direction: column;` no container pai `.benefits .container` (ou wrapper equivalente já usado)
 - **Dependências:** TASK-DIV-02
 - **Critério de aceite:** o espaçamento vertical entre `.benefits__intro-card`, `.benefits__grid` e `.benefits__closing` é de `25px` via `gap`, não via margins individuais.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído (implementado em `.benefits .container`, escopado só à seção de benefícios para não afetar o `.container` compartilhado)
 
 ### TASK-DIV-31
 - **Origem:** DIV-31
@@ -339,4 +339,4 @@ por dependência. Fonte de verdade: nós Figma `235:340` (Desktop) e `235:495`
 - **Valor novo:** **REQUER CONFIRMAÇÃO MANUAL** — o Figma só define 2 frames (1920px / 430px) sem anotação de breakpoint; `1024px` é uma escolha de engenharia razoável já em uso, não uma divergência de valor. Task de confirmação, não de alteração mecânica: validar com o time de design se `1024px` é aceitável ou se deveria ser outro valor (ex.: `768px`, `900px`).
 - **Dependências:** Nenhuma
 - **Critério de aceite:** decisão registrada (manter `1024px` ou novo valor) documentada em comentário no `style.css` acima da media query.
-- **Status:** [ ] Pendente
+- **Status:** [x] Concluído (decisão: manter `1024px`, comentário adicionado acima de `@media (min-width: 1024px)`)

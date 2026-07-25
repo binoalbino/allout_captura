@@ -35,28 +35,36 @@ Reli `01-divergencias.md` e `02-plano-de-acao.md` lado a lado.
 
 ### Ordem de execução recomendada (P1 → P2 → P3, respeitando dependências)
 
-1. TASK-DIV-30 (asset da fonte)
-2. TASK-DIV-13 (depende de DIV-30)
-3. TASK-DIV-01-a
-4. TASK-DIV-01-b (depende de DIV-01-a)
-5. TASK-DIV-11
-6. TASK-DIV-27 (asset do fundo do card)
-7. TASK-DIV-02 (wrapper do card)
-8. TASK-DIV-20 (depende de DIV-02)
-9. TASK-DIV-19
-10. TASK-DIV-18
-11. TASK-DIV-28 (asset do traço decorativo)
-12. TASK-DIV-24 (depende de DIV-28)
-13. TASK-DIV-06
-14. TASK-DIV-07
-15. TASK-DIV-14
-16. TASK-DIV-16
-17. TASK-DIV-32
-18. TASK-DIV-15
-19. TASK-DIV-17
-20. TASK-DIV-12 (depende de DIV-01-a/b)
-21. TASK-DIV-10 (depende de DIV-02)
-22. TASK-DIV-31 (confirmação manual, sem dependência técnica)
+**Status em 2026-07-24: as 22 tasks foram executadas — 21 divergências
+resolvidas.** Todas as marcações `[ ] Pendente` em `02-plano-de-acao.md`
+foram atualizadas para `[x] Concluído`, com notas nas tasks onde houve
+efeito colateral (TASK-DIV-14 e TASK-DIV-12 aplicadas junto com
+TASK-DIV-18 e TASK-DIV-01-a/b, respectivamente, por estarem nas mesmas
+regras CSS) ou decisão registrada em comentário (TASK-DIV-31 — breakpoint
+`1024px` mantido).
+
+1. ✅ TASK-DIV-30 (asset da fonte)
+2. ✅ TASK-DIV-13 (depende de DIV-30)
+3. ✅ TASK-DIV-01-a
+4. ✅ TASK-DIV-01-b (depende de DIV-01-a)
+5. ✅ TASK-DIV-11
+6. ✅ TASK-DIV-27 (asset do fundo do card)
+7. ✅ TASK-DIV-02 (wrapper do card)
+8. ✅ TASK-DIV-20 (depende de DIV-02)
+9. ✅ TASK-DIV-19
+10. ✅ TASK-DIV-18 (+ TASK-DIV-14 aplicada junto)
+11. ✅ TASK-DIV-28 (asset do traço decorativo)
+12. ✅ TASK-DIV-24 (depende de DIV-28)
+13. ✅ TASK-DIV-06
+14. ✅ TASK-DIV-07
+15. ✅ TASK-DIV-14 (aplicada junto com DIV-18)
+16. ✅ TASK-DIV-16
+17. ✅ TASK-DIV-32
+18. ✅ TASK-DIV-15
+19. ✅ TASK-DIV-17
+20. ✅ TASK-DIV-12 (depende de DIV-01-a/b — aplicada junto com DIV-01-a/b)
+21. ✅ TASK-DIV-10 (depende de DIV-02)
+22. ✅ TASK-DIV-31 (confirmação manual, sem dependência técnica — decisão: manter `1024px`)
 
 ---
 
