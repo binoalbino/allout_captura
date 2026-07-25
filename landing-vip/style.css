@@ -96,11 +96,9 @@ ul { list-style: none; }
   o final (85% -> 100%) com uma mask-image pra garantir transparência
   total na última faixa, sem mexer no resto (que já está correto).
 
-  bg-desk2.png (desktop) é uma foto "crua" (sem esmaecimento/transparência
-  compostos) — exibida sem blur, via object-fit:cover preenchendo todo o
-  .hero (em vez de width:100%/height:auto, que cortava de forma
-  imprevisível quando a altura natural da imagem não batia com a altura
-  do .hero).
+  bg-desk3.png (desktop) é uma foto "crua" (sem esmaecimento/transparência
+  compostos) — exibida sem blur, com width:100%/height:auto (mesma
+  técnica do mobile).
 */
 .hero__bg--mobile {
   position: absolute;
