@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALL OUT | Grupo VIP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="container hero__content">
+    <img src="assets/logo.svg" alt="ALL OUT" class="logo">
+
+    <h1 class="hero__title">entre em nosso<br>grupo VIP</h1>
+
+    <p class="hero__lead">
+      Receba ofertas exclusivas, acesso antecipado a lançamentos e avisos de estoque antes de todo mundo.
+    </p>
+
+    <ul class="hero__features">
+      <li><span class="dot"></span>Ofertas reais, sem ruído</li>
+      <li><span class="dot"></span>Drops e lançamentos em primeira mão</li>
+      <li><span class="dot"></span>Conteúdos e condições só para membros</li>
+    </ul>
+
+    <form class="vip-form" id="vip-form" novalidate>
+      <div class="field">
+        <input type="text" id="name" name="name" placeholder="Digite seu nome:" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <input type="email" id="email" name="email" placeholder="O seu melhor e-mail:" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu Whatsapp:" autocomplete="tel" required>
+      </div>
+
+      <button type="submit" class="btn-cta" id="submit-btn">
+        <span class="btn-cta__label">Entrar no Grupo VIP</span>
+      </button>
+
+      <p class="form__note">Seus dados estão seguros. O acesso chega no seu e-mail e WhatsApp.</p>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+        <span class="consent__box" aria-hidden="true"></span>
+        <span>Eu dou o meu consentimento para o uso dos meus dados pessoais</span>
+      </label>
+
+      <a href="politica-privacidade.html" class="privacy-link">Fique por dentro das nossas informações de privacidade e proteção de dados</a>
+
+      <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</header>
+
+<main class="benefits">
+  <div class="container">
+    <h2 class="benefits__title">Não é só um grupo. É fazer parte da corrida.</h2>
+    <p class="benefits__lead">
+      Criamos o Grupo VIP da ALL OUT para quem vive a corrida — do treino leve ao dia de prova.
+      Nada de mensagens aleatórias ou promoções vazias.<br>
+      Aqui você recebe apenas o que importa:
+    </p>
+
+    <div class="benefits__grid">
+      <div class="benefit-card">
+        <span class="benefit-card__num">01</span>
+        <p>condições especiais,</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-card__num">02</span>
+        <p>lançamentos,</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-card__num">03</span>
+        <p>avisos de estoque,</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-card__num">04</span>
+        <p>e oportunidades que não vão para o site.</p>
+      </div>
+    </div>
+
+    <p class="benefits__closing">É o nosso canal direto com quem corre junto com a marca.</p>
+
+    <button type="button" class="btn-cta btn-cta--secondary" data-scroll-to="name">
+      <span class="btn-cta__label">Entrar no Grupo VIP</span>
+    </button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <img src="assets/logo.svg" alt="ALL OUT" class="logo logo--footer">
+
+    <nav class="footer__links">
+      <a href="politica-privacidade.html">Política de Privacidade</a>
+      <a href="politica-privacidade.html">Termos de Uso</a>
+    </nav>
+
+    <a href="#top" class="back-to-top">
+      Voltar para o topo
+      <img src="assets/arrow-top.svg" alt="">
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
